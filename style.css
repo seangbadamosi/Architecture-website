@@ -50,3 +50,62 @@ body{
 .bg-black{
     background-color: #000 !important;
 }
+
+.offset-lg-3 {
+    margin-left: 25%;
+}
+
+.navbar-toggler{
+    height: 9vh;
+    width: 10vw;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar-toggler-icon{
+    width: 5vw !important;
+}
+
+/* for extra large */
+/* @media only screen and (max-width: 912px) {
+    
+} */
+
+@media only screen and (max-width: 600px) {
+
+    .navbar-brand{
+        width: 18vw !important;
+    }
+
+    .navbar-toggler-icon{
+        width: 6vw !important;
+    }
+
+    .navbar-toggler{
+        width: 9vw !important;
+        height: 8vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    *{
+        background-color: #000;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .navbar-brand{
+        width: 18vw !important;
+    }
+
+
+
+}
