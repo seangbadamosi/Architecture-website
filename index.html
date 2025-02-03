@@ -1,86 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- cdn for css -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css" rel="stylesheet">
+		<!-- cdn for css -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css"
+			rel="stylesheet"
+		/>
 
-    <link rel="stylesheet" href="./style.css">
-    
-    <title>Architechture Website</title>
-</head>
-<body>
-    <header>
-        <div class="">
-            <nav class="navbar navbar-expand-sm">
-                <div class="container">    
-                    <div class="col-lg-2">
-                        <img src="./assets/img/logo.png" alt="" class="navbar-brand">
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> 
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <div class=" col-lg-7 offset-1 ">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-light">home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-light">properties</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-light">about</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-light">contact</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Pages
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">about</a></li>
-                                        <li><a class="dropdown-item" href="#">blog</a></li>
-                                        <li><a class="dropdown-item" href="#">blog single</a></li>
-                                        <li><a class="dropdown-item" href="#">properties</a></li>
-                                        <li><a class="dropdown-item" href="#">property single</a></li>
-                                        <li><a class="dropdown-item" href="#">contact</a></li>
-                                        <li><a class="dropdown-item" href="#">review</a></li>
-                                        <li><a class="dropdown-item" href="#">agents</a></li>
-                                        <li><a class="dropdown-item text-uppercase" href="#">faqs</a></li>
-                                        <li><a class="dropdown-item" href="#">agents</a></li>
-                                    </ul>
-                                </li>      
-                            </ul>
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Architechture Website</title>
+	</head>
+	<body>
+		<header>
+			<div class="">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container">
+						<div class="col-lg-2">
+							<img src="./assets/img/logo.png" alt="" class="navbar-brand" />
+						</div>
+
+						<!-- offcanvas button --> 
+                        <button class="btn bg-light hide-on-large-screens" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <span class="navbar-toggler-icon text-light"></span>
+                        </button>
+
+						<!-- offcanvas content -->
+                        <div class="offcanvas offcanvas-start hide-on-large-screens" id="demo">
+                            <div class="offcanvas-header">
+								<img src="./assets/img/logo.png" alt="" class="navbar-brand" />
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body">
+								<ul class="nav">
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">home</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">properties</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">about</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">contact</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link dropdown-toggle text-light"
+											href="#"
+											id="navbarDropdown"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Pages
+										</a>
+
+										<!-- dropdown in offcanvas -->
+										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="#">about</a></li>
+											<li><a class="dropdown-item" href="#">blog</a></li>
+											<li><a class="dropdown-item" href="#">blog single</a></li>
+											<li><a class="dropdown-item" href="#">properties</a></li>
+											<li>
+												<a class="dropdown-item" href="#">property single</a>
+											</li>
+											<li><a class="dropdown-item" href="#">contact</a></li>
+											<li><a class="dropdown-item" href="#">review</a></li>
+											<li><a class="dropdown-item" href="#">agents</a></li>
+											<li>
+												<a class="dropdown-item text-uppercase" href="#"
+													>faqs</a
+												>
+											</li>
+										</ul>
+										<!-- remain links in offcanvas -->
+											<li class="nav-item">
+												<a href="" class="nav-link text-light">login</a>
+											</li>
+											<li class="nav-item">
+												<a href="" class="nav-link text-light btn">sign up</a>
+											</li>
+									</li>
+								</ul>
+                            </div>
                         </div>
-                        <div class="col-lg-3 offset-2">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-light">login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-light btn">sign up</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
+							<!-- comment -->
 
-    </main>
-    <footer>
+							
+						<div class="collapse navbar-collapse" id="collapsibleNavbar">
+							<div class="col-lg-7 offset-1">
+								<ul class="nav">
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">home</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">properties</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">about</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">contact</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link dropdown-toggle text-light"
+											href="#"
+											id="navbarDropdown"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Pages
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="#">about</a></li>
+											<li><a class="dropdown-item" href="#">blog</a></li>
+											<li><a class="dropdown-item" href="#">blog single</a></li>
+											<li><a class="dropdown-item" href="#">properties</a></li>
+											<li>
+												<a class="dropdown-item" href="#">property single</a>
+											</li>
+											<li><a class="dropdown-item" href="#">contact</a></li>
+											<li><a class="dropdown-item" href="#">review</a></li>
+											<li><a class="dropdown-item" href="#">agents</a></li>
+											<li>
+												<a class="dropdown-item text-uppercase" href="#"
+													>faqs</a
+												>
+											</li>
+											<li><a class="dropdown-item" href="#">agents</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 offset-2">
+								<ul class="nav">
+									<li class="nav-item">
+										<a href="" class="nav-link text-light">login</a>
+									</li>
+									<li class="nav-item">
+										<a href="" class="nav-link text-light btn">sign up</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div
+				class="offcanvas offcanvas-start"
+				tabindex="-1"
+				id="offcanvasExample"
+				aria-labelledby="offcanvasExampleLabel"
+			>
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+					<button
+						type="button"
+						class="btn-close text-reset"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
+				<div class="offcanvas-body">
+					<div>
+						Some text as placeholder. In real life you can have the elements you
+						have chosen. Like, text, images, lists, etc.
+					</div>
+					<div class="dropdown mt-3">
+						<button
+							class="btn btn-secondary dropdown-toggle"
+							type="button"
+							id="dropdownMenuButton"
+							data-bs-toggle="dropdown"
+						>
+							Dropdown button
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
 
-    </footer>
-
-    <!-- cdn for js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-</body>
+		<!-- cdn for js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+	</body>
 </html>
-
