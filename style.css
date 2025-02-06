@@ -160,3 +160,16 @@ body {
 		display: block;
 	}
 }
+
+/*  form in modal   */
+
+input::placeholder,
+input {
+	color: white !important;
+}
+
+input,
+label,
+.modal-title {
+	text-transform: capitalize !important;
+}
