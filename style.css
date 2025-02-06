@@ -33,6 +33,10 @@ body {
 	text-transform: capitalize;
 }
 
+.offcanvas-body {
+	overflow-y: visible;
+}
+
 .dropdown,
 .dropdown-menu,
 .dropdown-item {
@@ -139,6 +143,7 @@ body {
 
 	* {
 		background-color: #000;
+		margin: 0 !important;
 	}
 
 	.hide-on-large-screens {
