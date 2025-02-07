@@ -161,6 +161,24 @@ body {
 	}
 }
 
+/* for modal */
+
+.modal-footer {
+	justify-content: space-around;
+}
+
+.modal-content {
+	border-radius: 20px !important;
+}
+
+.modal-header {
+	justify-content: space-around;
+}
+
+.modal-dialog {
+	background-color: #000 !important;
+}
+
 /*  form in modal   */
 
 input::placeholder,
@@ -172,4 +190,19 @@ input,
 label,
 .modal-title {
 	text-transform: capitalize !important;
+}
+
+.d-flex {
+	display: flex !important;
+	justify-content: center !important;
+	text-align: center !important;
+	/* margin: 20px !important; */
+	text-align: center !important;
+}
+
+.flex {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

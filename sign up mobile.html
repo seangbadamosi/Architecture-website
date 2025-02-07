@@ -9,37 +9,44 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css"
 			rel="stylesheet"
 		/>
+
 		<!-- link for external css -->
 		<link rel="stylesheet" href="./style.css" />
-		<title>Document</title>
+		<title>Architecture website | mobile</title>
 	</head>
 	<body>
 		<!-- Button trigger modal -->
-		<button
-			type="button"
-			class="btn btn-primary"
-			data-bs-toggle="modal"
-			data-bs-target="#exampleModal"
-		>
-			sign up
-		</button>
+		<div class="flex">
+			<button
+				type="button"
+				class="btn btn-primary"
+				data-bs-toggle="modal"
+				data-bs-target="#exampleModal"
+			>
+				sign up
+			</button>
+		</div>
 		<div
-			class="modal fade"
+			class="modal fade bg-black"
 			id="exampleModal"
 			tabindex="-1"
 			aria-labelledby="exampleModalLabel"
 			aria-hidden="true"
 		>
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-dialog-centered text-light">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="staticBackdropLabel">sign up page</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
+						<div class="">
+							<h5 class="modal-title" id="staticBackdropLabel">sign up page</h5>
+						</div>
+						<div class="">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
 					</div>
 					<div class="modal-body">
 						<div class="mb-3">
@@ -80,10 +87,18 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn" data-bs-dismiss="modal">
-							Close
-						</button>
-						<button type="submit" class="btn">submit</button>
+						<div class="d-flex">
+							<button
+								type="button"
+								class="btn text-light"
+								data-bs-dismiss="modal"
+							>
+								Close
+							</button>
+						</div>
+						<div class="d-flex">
+							<button type="submit" class="btn text-light">submit</button>
+						</div>
 					</div>
 				</div>
 			</div>
